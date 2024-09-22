@@ -13,7 +13,7 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
   styleUrl: './chemical-el-filter.component.scss',
 })
 export class ChemicalElFilterComponent {
-  @Input() tableDataSource!: MatTableDataSource<PeriodicElement>;
+  @Input() public tableDataSource!: MatTableDataSource<PeriodicElement>;
   private filterSubjcet$ = new Subject<string>();
 
   constructor() {

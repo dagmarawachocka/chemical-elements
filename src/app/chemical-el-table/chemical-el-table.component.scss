@@ -1,12 +1,11 @@
-  .chemical-table {
-    --mat-table-row-item-outline-color: #fff;
-    --mat-table-row-item-outline-width: 0.2rem;
-    background-color: #F5EFFF;
-  }
+.chemical-table {
+  --mat-table-row-item-outline-color: #fff;
+  --mat-table-row-item-outline-width: 0.2rem;
+  background-color: #f5efff;
+}
 
-  .spinner-wrapper {
-    display: flex;
-    justify-content: center;
-    padding: 2rem 0;
-  }
-
+.spinner-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}

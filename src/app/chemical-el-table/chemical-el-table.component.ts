@@ -51,13 +51,17 @@ export class ChemicalElTableComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe((result) => {
       if (result !== undefined) {
-        const updatedDataSource = this.dataSource.data.map((el: PeriodicElement) => {
-          if (el.name === recordData.name) {
-            return result;
+        const updatedDataSource = this.dataSource.data.map(
+          (el: PeriodicElement) => {
+            if (el.name === recordData.name) {
+              return result;
+            }
+            return el;
           }
-          return el;
-        });
-        this.dataSource.data = updatedDataSource;
+        );
+        this.dataSource.data = updatedDataSource.sort(
+          (x, y) => x.position - y.position
+        );
       }
     });
   }
