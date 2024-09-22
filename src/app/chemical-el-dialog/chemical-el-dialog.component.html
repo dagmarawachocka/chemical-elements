@@ -1,0 +1,30 @@
+<div class="dialog-wrapper">
+  <h2 mat-dialog-title class="dialog-title">Edit Element</h2>
+  <mat-dialog-content class="dialog-inputs-wrapper">
+    <mat-form-field>
+      <mat-label>Element's Position</mat-label>
+      <input matInput [(ngModel)]="elPosition" />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Element's Name</mat-label>
+      <input matInput [(ngModel)]="elName" />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Element's Weight</mat-label>
+      <input matInput [(ngModel)]="elWeight" />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Element's Symbol</mat-label>
+      <input matInput [(ngModel)]="elSymbol" />
+    </mat-form-field>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button mat-stroked-button (click)="onCancel()">Cancel</button>
+    <button mat-flat-button (click)="onSave()" cdkFocusInitial>
+      Save
+    </button>
+  </mat-dialog-actions>
+</div>
